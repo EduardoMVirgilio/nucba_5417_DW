@@ -1,0 +1,62 @@
+/* Selector universal */
+
+/* * {
+  background-color: teal;
+  color: snow;
+} */
+
+/* Selector por etiqueta*/
+
+h1 {
+  background-color: snow;
+  color: teal;
+}
+
+/* Selector por clase */
+
+li {
+  background-color: tomato;
+  color: snow;
+}
+
+.item {
+  background-color: turquoise;
+  color: black;
+}
+
+/* Selector por id */
+
+#especial {
+  background-color: black;
+  color: turquoise;
+}
+
+/* Selector por atributo */
+
+[href*="https"] {
+  background-color: black;
+  color: turquoise;
+}
+
+/* Combinadores*/
+
+h1 ~ p {
+  background-color: black;
+  color: turquoise;
+}
+h1 + p {
+  background-color: black;
+  color: coral;
+}
+
+#ingredientes > li {
+  background-color: black;
+  color: coral;
+}
+
+main > header {
+}
+main > article {
+}
+main > footer {
+}

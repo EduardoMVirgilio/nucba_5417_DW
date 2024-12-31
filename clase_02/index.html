@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02 | #5417</title>
+</head>
+
+<body>
+    <!-- Etiquetas semanticas -->
+    <header>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Nosotros</a>
+        </nav>
+        <nav>
+            <a href="login">Login</a>
+            <a href="register">Sign Up</a>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1>
+                Hola SoyEdu!
+            </h1>
+        </header>
+        <article></article>
+        <article></article>
+        <footer></footer>
+    </main>
+    <section>
+        <header></header>
+        <article></article>
+        <article></article>
+        <!--Otras etiquetas de agrupación-->
+        <footer></footer>
+    </section>
+    <aside>
+        <header></header>
+        <article></article>
+        <article></article>
+        <footer></footer>
+    </aside>
+    <footer></footer>
+
+    <section id="about">
+        <picture>
+            <img src="http://placehold.co/360" alt="Marca de la Empresa">
+        </picture>
+        <article>
+            <h2>Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+    </section>
+    <figure>
+        <!-- <audio src=""></audio> -->
+        <!-- <video src=""></video> -->
+        <img src="http://placehold.co/42" alt="Marca de la Empresa">
+        <figcaption>
+            <p>Diseñado por la Agencia Edu</p>
+
+        </figcaption>
+    </figure>
+    <!-- Formularios -->
+    <form action="">
+        <input type="text" name="key" id="keyword" list="opciones">
+        <datalist id="opciones">
+            <option value="remera">Remera</option>
+            <option value="pantalon">pantalon</option>
+        </datalist>
+        <button type="submit">Buscar</button>
+    </form>
+    <form action="" method="post">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <button type="submit">Suscribir</button>
+    </form>
+    <form action="" method="post">
+        <fieldset>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+        </fieldset>
+        <fieldset>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <button type="button">Mostrar</button>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Ingresar</button>
+            <button type="reset">Limpiar</button>
+        </fieldset>
+    </form>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <label for="avatar">Avatar</label>
+            <input type="file" name="avatar" id="avatar">
+        </fieldset>
+        <fieldset>
+            <label for="credenciales">Credenciales</label>
+            <input type="file" name="credenciales" id="credenciales" multiple>
+        </fieldset>
+        <fieldset>
+            <label for="bio"> Biografía</label>
+            <textarea name="bio" id="bio"></textarea>
+        </fieldset>
+        <fieldset>
+            <select name="sexo" id="sexo">
+                <option value="" selected disabled>Sexo</option>
+                <option value="fem">Femenino</option>
+                <option value="mas">Masculino</option>
+                <option value="otro">Otro</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" name="color" id="color-1" value="red">
+            <label for="color-1">Rojo</label>
+            <input type="checkbox" name="color" id="color-2" value="blue">
+            <label for="color-2">Azul</label>
+            <input type="checkbox" name="color" id="color-3" value="green">
+            <label for="color-3">Verde</label>
+        </fieldset>
+        <fieldset>
+            <input type="radio" name="size" id="size-1" value="small">
+            <label for="size-1">Small</label>
+            <input type="radio" name="size" id="size-2" value="medium">
+            <label for="size-2">Medium</label>
+            <input type="radio" name="size" id="size-3" value="large">
+            <label for="size-3">Large</label>
+        </fieldset>
+        <fieldset>
+            <label for="rating">rating</label>
+            <input type="range" value="5" min="1" max="120" step="1">
+            <progress value="27" max="100"></progress>
+        </fieldset>
+    </form>
+</body>
+
+</html>
