@@ -1,0 +1,149 @@
+/* Estilos de la clase */
+.container {
+  background-color: #282828;
+  padding: 16px;
+  border-radius: 16px;
+  width: fit-content;
+  margin: 20px 0;
+}
+
+.text-span {
+  color: #ff005c;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* overflow */
+.overflow-box {
+  width: 100px;
+  height: 100px;
+  background-color: #8c54fb;
+  border-radius: 1rem;
+}
+
+.visible {
+  overflow: visible;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.auto {
+  overflow: auto;
+}
+
+/* Padding */
+.padding {
+  border-radius: 1rem;
+  background-color: #8c54fb;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  /* version abreviada */
+  /* padding: 20px 20px 40px 40px;  */
+}
+
+/* Border  */
+.border {
+  border: 5px solid #8c54fb;
+  padding: 5px;
+  margin-bottom: 32px;
+}
+
+.dashed {
+  border: 5px dashed #8c54fb;
+  padding: 5px;
+  margin-bottom: 32px;
+}
+.dotted {
+  border: 5px dotted #8c54fb;
+  padding: 5px;
+  margin-bottom: 32px;
+}
+.double {
+  border: 5px double #8c54fb;
+  padding: 5px;
+}
+
+/* Border radius */
+.radius {
+  padding: 10px;
+  background: #8c54fb;
+  border-radius: 8px;
+}
+
+/* margin */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #8c54fb;
+  border-radius: 1rem;
+}
+
+.box:nth-child(2) {
+  background-color: #8c54fb;
+}
+
+.margin {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  /* version abreviada */
+  /* margin: 20px 20px 40px 40px; */
+}
+
+.block {
+  border: 1px solid #8c54fb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mt {
+  margin-top: 3rem;
+}
+
+.inline {
+  border: 1px solid crimson;
+  margin: 2rem 0rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+/* positions */
+.relative {
+  position: relative;
+  left: 100px;
+}
+
+.absolute-container {
+  background-color: #282828;
+  /* padding: 16px; */
+  border-radius: 16px;
+  margin: 20px 0;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
