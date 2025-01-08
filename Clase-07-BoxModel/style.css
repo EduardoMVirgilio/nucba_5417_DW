@@ -31,22 +31,25 @@
 
 .scroll {
   overflow: scroll;
+  scrollbar-width: none;
 }
 
 .auto {
+  width: 110px;
   overflow: auto;
+  scrollbar-width: none;
 }
 
 /* Padding */
 .padding {
   border-radius: 1rem;
   background-color: #8c54fb;
-  padding-top: 20px;
+  /* padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
-  padding-left: 40px;
+  padding-left: 40px; */
   /* version abreviada */
-  /* padding: 20px 20px 40px 40px;  */
+  padding: 20px 20px 40px 20px;
 }
 
 /* Border  */
@@ -75,7 +78,7 @@
 .radius {
   padding: 10px;
   background: #8c54fb;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 /* margin */
@@ -91,12 +94,12 @@
 }
 
 .margin {
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-  margin-left: 40px;
+  /* margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto; */
   /* version abreviada */
-  /* margin: 20px 20px 40px 40px; */
+  margin: 20px 10px;
 }
 
 .block {
@@ -114,8 +117,9 @@
 }
 
 .inline {
+  display: inline-block;
   border: 1px solid crimson;
-  margin: 2rem 0rem;
+  margin: 2rem;
   padding: 1rem;
   border-radius: 0.4rem;
 }
@@ -123,7 +127,7 @@
 /* positions */
 .relative {
   position: relative;
-  left: 100px;
+  inset: 50px;
 }
 
 .absolute-container {
@@ -138,12 +142,27 @@
 
 .absolute {
   position: absolute;
-  left: 20px;
-  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  right: -20px;
+  top: -20px;
+  z-index: 0;
+}
+.absolute:nth-child(2) {
+  position: absolute;
+  background-color: #ff005c;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
 }
 
 .fixed {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  z-index: 9;
+  background-color: rgb(129, 255, 127);
+  border-radius: 50%;
+  width: 0.5in;
+  height: 0.5in;
 }
