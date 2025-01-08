@@ -1,7 +1,39 @@
-.list {
+/* Navegacion de pestañas */
+.nav-tab {
 }
+
+.tab {
+}
+
+#tab_1 {
+}
+#tab_2 {
+}
+#tab_3 {
+}
+
+/* Boton Bot */
+.nav-bot {
+}
+
+.nav-bot a {
+}
+
+/* Lista de numeros*/
 .list-numbs {
 }
 
+.list-numbs li {
+}
+
+/* Lista de imagenes */
 .list-images {
+}
+.list-item {
+}
+.list-thumb {
+}
+.list-image {
+}
+.list-icon {
 }
