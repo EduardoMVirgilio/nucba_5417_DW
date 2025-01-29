@@ -1,14 +1,23 @@
 /*Fondo (mostrar distintos tipos de gradientes)*/
 .caja1 {
+  background-image: linear-gradient(to left, crimson, gold);
+  /* background-image: radial-gradient(crimson, gold); */
 }
 
 /*Texto*/
 .caja2 {
+  background-image: linear-gradient(to right, crimson, gold);
+  background-clip: text;
+  color: transparent;
 }
 
 /*Ambos*/
 .caja3 {
+  background-image: linear-gradient(to left, crimson, gold);
 }
 
 .caja3 span {
+  background-image: linear-gradient(to right, teal, aqua);
+  background-clip: text;
+  color: transparent;
 }
