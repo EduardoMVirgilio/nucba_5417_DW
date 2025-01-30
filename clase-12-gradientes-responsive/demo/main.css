@@ -1,0 +1,94 @@
+@import url("../css/base.css");
+section {
+  width: 75%;
+  min-height: 90vh;
+  background-image: linear-gradient(teal, transparent 90%);
+}
+section header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.25rem solid snow;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+section header h2 {
+  background-image: linear-gradient(to left, snow, turquoise);
+  background-clip: text;
+  color: transparent;
+}
+#desktop-category {
+  display: none;
+}
+#category {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  position: sticky;
+  top: 2rem;
+  left: 0;
+}
+
+section > ul {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+section > ul li {
+  background-color: turquoise;
+  aspect-ratio: 1/1;
+  padding: 0.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (min-width: 540px) {
+  section > ul li {
+    background-color: teal;
+    color: snow;
+    width: calc(50% - 1rem);
+  }
+  section > ul {
+    flex-flow: row wrap;
+  }
+  #category {
+    display: none;
+  }
+  #desktop-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem;
+    margin-top: 1rem;
+  }
+  #desktop-category input[type="radio"] {
+    display: none;
+  }
+  #desktop-category label {
+    flex: 1;
+    background-color: snow;
+    padding: 0.25rem 0.75rem;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  #desktop-category {
+    padding: 1rem;
+  }
+  section > ul li {
+    background-color: teal;
+    color: snow;
+    width: calc(33% - 1rem);
+  }
+}
