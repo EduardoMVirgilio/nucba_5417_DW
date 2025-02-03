@@ -61,3 +61,28 @@
   height: 100%;
   object-fit: contain;
 }
+
+@media (max-width: 1032px) {
+  #discover header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  #discover header > h2 {
+    width: 100%;
+    padding: 0.25rem;
+    text-align: center;
+  }
+  #discover header > article {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+  #discover ul {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+  }
+}

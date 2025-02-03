@@ -147,3 +147,23 @@
   color: var(--bg-white);
   border-radius: 0.5rem;
 }
+
+@media (max-width: 1140px) {
+  #products header h2 {
+    text-align: center;
+  }
+  #products header > form label {
+    flex: auto;
+    width: calc(100% / 3 - 1rem);
+  }
+  #products > ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #products header > form label {
+    flex: auto;
+    width: 100%;
+  }
+}

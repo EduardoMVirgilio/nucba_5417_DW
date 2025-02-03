@@ -44,3 +44,20 @@
   padding: 1rem;
   gap: 1rem;
 }
+
+@media (max-width: 1032px) {
+  #info header h2 {
+    text-align: center;
+  }
+  #info ul {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  #info ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
