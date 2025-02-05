@@ -75,15 +75,3 @@
 .nth-child-number-n .caja:nth-child(3n + 1) {
   background-color: #8c54fb;
 }
-
-/* first-letter */
-.first-letter::first-letter {
-  color: crimson;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-}
-
-/* first-line */
-.first-line::first-line {
-  color: crimson;
-}
