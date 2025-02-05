@@ -2,6 +2,9 @@
 .before::before {
   content: "(🤩) ";
 }
+.before::after {
+  content: " (🤩)";
+}
 
 /* after */
 .after::after {
@@ -19,11 +22,13 @@
 
 .input-placeholder::placeholder {
   color: white;
+  font-weight: bold;
 }
 
 /* first-letter */
 .first-letter::first-letter {
   color: crimson;
+  font-family: serif;
   font-size: 2rem;
   letter-spacing: 0.2rem;
 }
@@ -31,4 +36,9 @@
 /* first-line */
 .first-line::first-line {
   color: crimson;
+}
+
+::selection {
+  background-color: crimson;
+  color: snow;
 }

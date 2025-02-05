@@ -38,6 +38,10 @@
   background: crimson;
 }
 
+.focus-input:disabled {
+  display: none;
+}
+
 /* first-child */
 .first .caja:first-child {
   background: #8c54fb;
@@ -72,6 +76,6 @@
   background-color: #8c54fb;
 }
 /* nth-child-number-n */
-.nth-child-number-n .caja:nth-child(3n + 1) {
+.nth-child-number-n .caja:nth-child(2n + 1) {
   background-color: #8c54fb;
 }
