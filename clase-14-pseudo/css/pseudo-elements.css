@@ -1,0 +1,22 @@
+/* before */
+.before::before {
+  content: "(🤩) ";
+}
+
+/* after */
+.after::after {
+  content: " (🍕)";
+}
+
+/* placeholder */
+.input-placeholder {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 10px;
+  background-color: rgb(105, 104, 104);
+}
+
+.input-placeholder::placeholder {
+  color: white;
+}

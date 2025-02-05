@@ -1,0 +1,89 @@
+.hover {
+  background: crimson;
+  padding: 10px;
+  border-radius: 1rem;
+  transition: all 0.3s ease; /* Lo vemos la clase que viene */
+}
+.hover:hover {
+  background: #8c54fb;
+  transition: all 0.3s ease; /* Lo vemos la clase que viene */
+}
+
+/* active */
+.active:active {
+  color: crimson;
+  transition: all 0.3s ease;
+}
+
+/* visited */
+.visited:visited {
+  color: #8c54fb;
+}
+
+/* link */
+.link:link {
+  color: crimson;
+}
+
+/* focus */
+
+.focus-input {
+  padding: 5px 10px;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.focus-input:focus {
+  background: crimson;
+}
+
+/* first-child */
+.first .caja:first-child {
+  background: #8c54fb;
+}
+
+/* last-child */
+.last .caja:last-child {
+  background: #8c54fb;
+}
+
+/* first-of-type  */
+.first-of-type .caja:first-of-type {
+  background: #8c54fb;
+}
+/* nth-child odd*/
+.nth-child-odd .caja:nth-child(odd) {
+  background: #8c54fb;
+}
+
+/* nth-child even */
+.nth-child-even .caja:nth-child(even) {
+  background-color: #8c54fb;
+}
+
+/* nth-child-number  */
+.nth-child-number .caja:nth-child(3) {
+  background: #8c54fb;
+}
+
+/* nth-child-n */
+.nth-child-n .caja:nth-child(2n) {
+  background-color: #8c54fb;
+}
+/* nth-child-number-n */
+.nth-child-number-n .caja:nth-child(3n + 1) {
+  background-color: #8c54fb;
+}
+
+/* first-letter */
+.first-letter::first-letter {
+  color: crimson;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+/* first-line */
+.first-line::first-line {
+  color: crimson;
+}
