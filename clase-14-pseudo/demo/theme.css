@@ -1,0 +1,45 @@
+#theme {
+  width: 6rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border: 0.1rem solid;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#theme input {
+  display: none;
+}
+#theme label {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  box-sizing: border-box;
+  color: transparent;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  z-index: 0;
+}
+
+#theme label[for="theme-dark"] {
+  background-color: gold;
+}
+#theme label[for="theme-light"] {
+  background-color: black;
+}
+
+#theme-dark:checked ~ label[for="theme-dark"] {
+  width: 6rem;
+}
+#theme-dark:checked ~ label[for="theme-light"] {
+  background-color: transparent;
+}
+#theme-light:checked ~ label[for="theme-light"] {
+  width: 6rem;
+}
+#theme-light:checked ~ label[for="theme-dark"] {
+  background-color: transparent;
+}

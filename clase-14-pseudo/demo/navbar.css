@@ -1,0 +1,54 @@
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+#btnMenu,
+#btnCart {
+  display: none;
+}
+label[for="btnMenu"] {
+  cursor: pointer;
+  font-family: sans-serif;
+  background-color: crimson;
+  color: snow;
+  padding: 0.25rem 0.75rem;
+  box-sizing: border-box;
+  border-radius: 0.75rem;
+}
+label[for="btnMenu"]:hover {
+  box-shadow: 0 0 0.25rem 0 rgba(21, 21, 21, 0.4);
+}
+label[for="btnCart"] {
+  cursor: pointer;
+  font-family: sans-serif;
+  background-color: rebeccapurple;
+  color: snow;
+  padding: 0.25rem 0.75rem;
+  box-sizing: border-box;
+  border-radius: 0.75rem;
+}
+label[for="btnCart"]:hover {
+  box-shadow: 0 0 0.25rem 0 rgba(21, 21, 21, 0.4);
+}
+
+#navbar nav,
+#navbar section {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 4rem;
+  right: 0;
+  padding: 1rem;
+  gap: 1rem;
+  transform: translateX(100%);
+  transition: all 300ms ease-in-out;
+}
+
+#btnMenu:checked ~ nav {
+  transform: translateX(0);
+}
+#btnCart:checked ~ section {
+  transform: translateX(0);
+}
