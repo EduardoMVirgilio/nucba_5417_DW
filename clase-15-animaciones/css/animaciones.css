@@ -1,15 +1,30 @@
 @keyframes animada {
   0% {
-    transform: translateX(0);
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  55% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(0);
   }
   100% {
-    transform: translateX(200px);
+    transform: scaleX(1);
   }
 }
 
 .animada {
   animation-name: animada;
-  animation-duration: 2s;
+  animation-duration: 10s;
 }
 
 .infinita {
