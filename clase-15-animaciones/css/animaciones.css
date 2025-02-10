@@ -1,0 +1,41 @@
+@keyframes animada {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.animada {
+  animation-name: animada;
+  animation-duration: 2s;
+}
+
+.infinita {
+  animation-iteration-count: infinite;
+}
+
+.alternada {
+  animation-direction: alternate;
+}
+
+.delay {
+  animation-delay: 4s; /*Solo aplica a la primera iteración*/
+}
+
+.timing {
+  animation-timing-function: ease-in-out;
+}
+
+.paused:hover {
+  animation-play-state: paused;
+}
+
+.animation-shorthand {
+  animation: animada 2s 4s infinite alternate ease-in-out;
+}
+
+.animation-shorthand:hover {
+  animation-play-state: paused;
+}

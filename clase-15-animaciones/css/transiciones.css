@@ -1,0 +1,60 @@
+/* transition */
+.transition-duration {
+  transition-property: all;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.transition-duration:hover {
+  background-color: #ad29ca;
+  width: 250px;
+  height: 250px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.transition-timing {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.transition-timing:hover {
+  background: #ad29ca;
+  width: 220px;
+  height: 220px;
+  transform: rotate(10deg);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.transition-delay {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-delay: 500ms;
+  cursor: pointer;
+}
+.transition-delay:hover {
+  background: #ad29ca;
+  width: 220px;
+  height: 220px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-delay: 1s;
+}
+
+.transition-shorthand {
+  transition: all 1s ease-out;
+  cursor: pointer;
+}
+.transition-shorthand:hover {
+  background: #ad29ca;
+  width: 220px;
+  height: 220px;
+  transition: all 2s 500ms ease; /* transition-property | transition-duration | transition-delay | transition-timing-function */
+}
