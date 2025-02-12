@@ -1,0 +1,70 @@
+body > header {
+  width: 100vw;
+  background-image: linear-gradient(#121e3c, var(--background));
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+body > header > a {
+  width: 8rem;
+}
+body > header > nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+body > header > nav a {
+  color: var(--text-white);
+  font-weight: 400;
+}
+/* body > header > nav a:first-child{} */
+body > header > form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+body > header > form input[type="checkbox"] {
+  display: none;
+}
+
+body > header > form label {
+  width: 2rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body > header > form label svg {
+  fill: var(--text-white);
+  height: 100%;
+  object-fit: contain;
+}
+
+[for="btnMenu"] {
+  display: none;
+}
+
+@media (max-width: 1032px) {
+  body > header > nav {
+    display: none;
+  }
+  body > header > form {
+    flex: 1;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  [for="btnMenu"] {
+    display: flex;
+  }
+}
