@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideUp 1s ease-out 1 300ms forwards;
 }
 #info ul {
   width: 100%;
@@ -19,6 +20,7 @@
   gap: 1rem;
   list-style: none;
 }
+
 #info ul li {
   background-color: var(--secondary);
   display: flex;
@@ -30,6 +32,8 @@
   justify-content: center;
   border-radius: 1rem;
   padding: 1rem;
+  opacity: 0;
+  transform: translateY(4rem);
 }
 #info ul li picture {
   height: 72px;
@@ -43,6 +47,16 @@
   justify-content: flex-start;
   padding: 1rem;
   gap: 1rem;
+}
+
+#info ul li:nth-child(1) {
+  animation: slideUp 1s ease-out 1 325ms forwards;
+}
+#info ul li:nth-child(2) {
+  animation: slideUp 1s ease-out 1 400ms forwards;
+}
+#info ul li:nth-child(3) {
+  animation: slideUp 1s ease-out 1 500ms forwards;
 }
 
 @media (max-width: 1032px) {

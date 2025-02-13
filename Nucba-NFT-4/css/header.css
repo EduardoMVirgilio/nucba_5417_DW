@@ -22,10 +22,32 @@ body > header > nav {
   gap: 1rem;
 }
 body > header > nav a {
-  color: var(--text-white);
+  color: var(--text-gray);
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.05rem;
 }
-/* body > header > nav a:first-child{} */
+
+body > header > nav a::after {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--text-white);
+  transform-origin: right center;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+body > header > nav a:hover::after {
+  transform-origin: left center;
+  transform: scaleX(1);
+}
+
+body > header > nav a:first-child {
+  color: var(--text-white);
+}
+
 body > header > form {
   display: flex;
   justify-content: flex-end;
@@ -55,6 +77,27 @@ body > header > form label svg {
   display: none;
 }
 
+body > header > form > nav {
+  display: none;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(53, 53, 53, 0.2);
+  backdrop-filter: blur(0.25rem);
+  display: none;
+}
+
+body:has(#actions input[type="checkbox"]:checked)::before {
+  display: flex;
+}
+
 @media (max-width: 1032px) {
   body > header > nav {
     display: none;
@@ -66,5 +109,37 @@ body > header > form label svg {
   }
   [for="btnMenu"] {
     display: flex;
+  }
+
+  body > header > form > nav {
+    position: fixed;
+    top: 5rem;
+    left: calc(25% / 2);
+    width: 75%;
+    background-color: var(--nav-bg);
+    border: 0.25rem solid var(--electric);
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 2rem;
+    border-radius: 0 0 1rem 1rem;
+    z-index: 1;
+    gap: 1rem;
+    transform: translateY(-100vh);
+    transition: all 300ms ease-in-out;
+  }
+  body > header > form > nav a {
+    color: var(--text-gray);
+    font-weight: 400;
+    transition: all 250ms ease-in-out;
+  }
+  body > header > form > nav a:active {
+    color: var(--text-white);
+  }
+  body > header > form > nav a:hover {
+    color: var(--text-white);
+  }
+  #btnMenu:checked ~ nav {
+    transform: translateX(0);
   }
 }
