@@ -7,6 +7,8 @@
   align-content: flex-start;
   padding: 5rem 0;
   gap: 2rem;
+  scroll-snap-align: start;
+  scroll-margin-top: 1rem;
 }
 #products header {
   width: 100%;
