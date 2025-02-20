@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 18 | Metodologi BEM</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    <header class="header">
+        <a href="" class="header_link">
+            <img src="https://placehold.co/48/orange/snow?text=L" alt="logo" class="header_brand">
+        </a>
+        <nav class="header_navbar header_navbar-desktop">
+            <a href="" class="header_link header_link-navbar header_link-active">Home</a>
+            <a href="" class="header_link header_link-navbar">Link</a>
+            <a href="" class="header_link header_link-navbar">Link</a>
+            <a href="" class="header_link header_link-navbar header_link-external" target="_blank">Youtube</a>
+        </nav>
+        <form action="" class="header_form">
+            <label for="btnCart" class="header_label">Carrito</label>
+            <input type="checkbox" id="btnCart" class="header_toggle header_toggle-cart">
+            <label for="btnMenu" class="header_label">Menu</label>
+            <input type="checkbox" id="btnMenu" class="header_toggle header_toggle-menu">
+            <nav class="header_navbar header_navbar-mobile">
+                <a href="" class="header_link header_link-navbar header_link-active">Home</a>
+                <a href="" class="header_link header_link-navbar">Link</a>
+                <a href="" class="header_link header_link-navbar">Link</a>
+                <a href="" class="header_link header_link-navbar header_link-external" target="_blank">Youtube</a>
+            </nav>
+            <section class="header_cart">
+                <header  class="header-section">
+                    <h2 class="header_subtitle">Carrito</h2>
+                </header>
+                <ul class="header_list">
+                    <li class="header_item">
+                        <picture class="header_picture">
+                            <img src="" alt="Imagen Producto" class="header_image">
+                        </picture>
+                        <fieldset class="header_action">
+                            <button type="button" class="header_button header_button-discount">-</button>
+                            <output class="header_output">1</output>
+                            <button type="button" class="header_button header_button-add">+</button>
+                        </fieldset>
+                        <fieldset class="header_action header_action-secondary">
+                            <button type="button"  class="header_button header_button-remove">X</button>
+                        </fieldset>
+                    </li>
+                </ul>
+            </section>
+        </form>
+    </header>
+
+    <form action="">
+        <fieldset>
+            <input type="text">
+            <button data-icon="cargando...">enviar</button>
+        </fieldset>
+    </form>
     
 </body>
 </html>
