@@ -1,0 +1,13 @@
+.container {
+    background-color: #282828;
+    padding: 16px;
+    border-radius: 16px;
+    width: fit-content;
+    margin: 20px 0;
+  }
+  
+  .item {
+    background: #ff005c;
+    border-radius: 8px;
+    text-align: center;
+  }
